@@ -1492,6 +1492,26 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 121.92) (xy 99.06 119.38)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "28748e76-2735-4156-a145-720951b27585")
+	)
+	(wire
+		(pts
+			(xy 99.06 129.54) (xy 99.06 127)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "3ebfaab4-0c16-40bd-bbc0-0157b0b9e89d")
+	)
+	(wire
+		(pts
 			(xy 86.36 88.9) (xy 86.36 86.36)
 		)
 		(stroke
@@ -3430,6 +3450,110 @@
 		)
 	)
 	(symbol
+		(lib_id "LibreSolar:C")
+		(at 99.06 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "57d21918-ec79-427e-afaa-b44285babdd9")
+		(property "Reference" "C41"
+			(at 99.568 122.682 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 99.568 126.238 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LibreSolar:C_0603_1608"
+			(at 99.06 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at -73.66 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PartNumber" "CL10B104KC8NNNC"
+			(at -73.66 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Remarks" "min. 100V, X7R"
+			(at 99.06 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15725"
+			(at 99.06 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7483f4db-a48a-4e94-a293-97d25b228f1d")
+		)
+		(pin "2"
+			(uuid "5786c5b3-333f-421c-9efe-e18bebb1f37a")
+		)
+		(instances
+			(project "bms-c1"
+				(path "/5335aa43-6e7e-459f-9425-0b3d35652705/00000000-0000-0000-0000-000058363b12"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 195.58 76.2 0)
 		(unit 1)
@@ -3903,6 +4027,69 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 99.06 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "910c7e1b-0a8b-404b-bcb0-812bb3ae8b44")
+		(property "Reference" "#PWR023"
+			(at 99.06 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 99.06 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ac0208df-18ea-43b8-a570-0eab6c7eb1fd")
+		)
+		(instances
+			(project "bms-c1"
+				(path "/5335aa43-6e7e-459f-9425-0b3d35652705/00000000-0000-0000-0000-000058363b12"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 162.56 101.6 0)
 		(unit 1)
@@ -4071,6 +4258,69 @@
 			(project "bms-c1"
 				(path "/5335aa43-6e7e-459f-9425-0b3d35652705/00000000-0000-0000-0000-000058363b12"
 					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d74588a0-030e-4993-891c-4f901c245e46")
+		(property "Reference" "#PWR024"
+			(at 99.06 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93689310-03dd-43c3-8c9f-3023ac25bc92")
+		)
+		(instances
+			(project "bms-c1"
+				(path "/5335aa43-6e7e-459f-9425-0b3d35652705/00000000-0000-0000-0000-000058363b12"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
