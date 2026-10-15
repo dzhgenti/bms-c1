@@ -6608,7 +6608,7 @@
 			(uuid "6ef1bfa8-fba8-482a-a910-3bb019a9d626")
 		)
 		(instances
-			(project ""
+			(project "bms-c1"
 				(path "/5335aa43-6e7e-459f-9425-0b3d35652705/1a7f6efa-ef60-433d-acc0-6f9a9126bc57"
 					(reference "C39")
 					(unit 1)
